@@ -12,6 +12,11 @@ class Settings(BaseSettings):
         else "chatgpt"
     )
 
+    # ChatGPT Config
+    chatgpt_email: Text = ""
+    chatgpt_password: Text = ""
+    chatgpt_paid: bool = False
+
 
 settings = Settings()
 logger = logging.getLogger(settings.logger_name)
