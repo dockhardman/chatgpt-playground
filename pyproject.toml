@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "chatgpt-playground"
+version = "0.1.0"
+description = ""
+authors = ["Allen Chou <f1470891079@gmail.com>"]
+readme = "README.md"
+packages = [{include = "chatgpt_playground"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8.0, <4.0.0"
+revchatgpt = "2.3.0"
+black = "*"
+rich = "*"
+pytz = "*"
+fastapi = "0.*"
+uvicorn = {version = "0.*", extras = ["standard"]}
+
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
